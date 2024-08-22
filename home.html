@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="left">
+                <div class="search-bar">
+                    <input type="text" placeholder="Enter Your City" autocomplete="off">
+                    <button class="search-btn"></button>
+                </div>
+                <div class="error-msg hidden">Invalid City Name</div>
+                <div class="location-bar hidden">
+                    <span class="location-img"></span>
+                    <span class="location-text">Islamabad</span>
+                </div>
+                <div class="temperature-main hidden">
+                    <div class="temperature-img">
+                    </div>
+                    <div class="temperature-value">27<sup>°c</sup>
+                    </div>
+                </div>
+                <div class="time-details hidden">
+                    <div class="date">13 Aug, 2024</div>
+                    <div class="time">11:36 AM</div>
+                </div>
+                
+
+            </div>
+            <div class="right hidden">
+                
+                <div class="temperature-details">
+                    <div class="humidity-section">
+                        <div class="hum-img"></div>
+                        <div class="hum-text">Humidity</div>
+                        <div class="hum-value">80%</div>
+                    </div>
+                    <div class="wind-section">
+                        <div class="wind-img"></div>
+                        <div class="wind-text">Wind</div>
+                        <div class="wind-value">12 km/h</div>
+                    </div>
+                    <div class="feels-like-section">
+                        <div class="feel-img"></div>
+                        <div class="feel-text">Feels Like</div>
+                        <div class="feel-value">32<sup>°c</sup></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
